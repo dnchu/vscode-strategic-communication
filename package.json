@@ -1,0 +1,25 @@
+{
+    "name": "strategic-communication",
+    "displayName": "Strategic Communication",
+    "description": "Syntax highlighting for the Strategic Communication programming language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "strategic-communication",
+            "aliases": ["Strategic Communication", "strategic-communication"],
+            "extensions": [".business"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "strategic-communication",
+            "scopeName": "source.strategic-communication",
+            "path": "./syntaxes/strategic-communication.tmLanguage.json"
+        }]
+    }
+}

@@ -1,0 +1,46 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Strategic Communication",
+	"patterns": [
+		{
+			"include": "#registers"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#operations"
+		}
+	],
+	"repository": {
+		"registers": {
+			"patterns": [{
+				"name": "support.variable.strategic-communication",
+				"match": "\\b(customer experience|revenue streams|core competencies|best practices|stakeholder engagement|key performance indicators|return on investment|assets)\\b"
+			}]
+		},
+		"constants": {
+			"patterns": [{
+				"name": "constant.numeric.strategic-communication",
+				"match": "\\b(HR|Engineering|Legal|PR|Finance|Marketing|R&D|Sales|Manufacturing|Executive Management)((,| and|, and) (HR|Engineering|Legal|PR|Finance|Marketing|R&D|Sales|Manufacturing|Executive Management))*\\b"
+			}]
+		},
+		"operations": {
+			"patterns": [
+				{
+					"name": "keyword.control.strategic-communication",
+					"match": "\\b(moving forward|going forward|circle back to|revisit|pivot|to|restructure)\\b,?"
+				},
+				{
+					"name": "support.function.strategic-communication",
+					"match": "\\b(deliver|produce)\\b"
+				},
+				{
+					"name": "keyword.other.strategic-communication",
+					"match": "\\b(innovate|value-add|streamline|optimize|revamp|overhaul|amplify|incentivize|backburner|paradigm shift|align|with|synergize|and|integrate|differentiate|crowdsource)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.strategic-communication"
+}
